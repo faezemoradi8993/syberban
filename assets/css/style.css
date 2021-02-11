@@ -146,6 +146,7 @@ header{
     align-items: center;
 }
 /* start css second-search-bar*/
+
 .second-search-bar{  
     color: #5E6367;
     display: none;
@@ -244,39 +245,43 @@ header{
 }
 .mega-menu .item:hover .hidden {
     display: block;
+    box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.19);
     
 }
 
-.dropdown-content col  {
-text-align: right;
-text-decoration: none;
-list-style: none;
+.dropdown-col{
+    display: flex;
 }
-.dropdown-content col ul {
+.dropdown-col ul {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+   
     align-items: center;
-    text-decoration: none;
-    list-style-type: none;
+   
     color: rgb(12, 12, 12);
     list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.dropdown-content col ul li{
-    text-decoration: none;
-    list-style-type: none;
+.dropdown-col ul li{
+   
     color: rgb(10, 10, 10);
+    padding: 10px;
 
 }
-.dropdown-content col ul li a{
+ .bold-title a{
+   font-weight: bold;
+   font-size: 14px;
+   margin-bottom: 10px;
+
+}
+.dropdown-col ul li a{
     text-decoration: none;
   
     color: rgb(15, 15, 15);
 
 }
-.dropdown-content col ul li a:hover{
+.dropdown-col ul li a:hover{
     text-decoration: none;
    
     color: black;
@@ -493,6 +498,29 @@ list-style: none;
     right:25px ;
     z-index: 100;
     display: none;
+}
+.contact-icon{
+ 
+   
+  
+    top:84px;
+    left:25px ;
+    z-index: 100;
+    display: none;
+    background-color: red;
+    width: 24px;
+    border-radius: 50px;
+    height: 24px;
+    position: absolute;
+}
+
+.contact-icon span{
+    position: relative;
+    top: 2px;
+    font-size: 20px;
+    /* background-color: #00acee; */
+    /* border-radius: 50%; */
+    left: 2px;
 }
 .profile-close-icon{
 
@@ -1734,6 +1762,7 @@ justify-content: space-between;
     }
     .second-header{
         padding:0px 30px;
+        justify-content: center;
     }
     
     .main{
@@ -1849,12 +1878,17 @@ justify-content: space-between;
     
     display: block;
 }
+.contact-icon{
+    display: block;
+}
 .second-search-bar{
     display: block;
 
 }
 .second-search-bar{
     display: flex;
+    margin-left: 0px;
+   
 }
 .mega-menu{
     display: none;
@@ -2007,6 +2041,11 @@ justify-content: space-between;
 
 
 @media only screen and (max-width: 360px) {
+    .second-search-bar{
+        width: 160px;
+        
+    
+    }
     .contentbox-userinfo , .content-userinfo{
         max-width:300px;
     }

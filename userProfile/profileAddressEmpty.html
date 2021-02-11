@@ -14,48 +14,536 @@
 </head>
 <body>
     <!-- header -->
-    <header class=" container-fluid">
-        <div class=" header-container"> 
-             <!-- header-right : menuicon , logo , menu -->
-            <div class="header-right">
-                <!-- menuicon display in mobile view , when user click it showmobilemenu class (add to /remove from) mobilemenu-container  -->
-                <div class="menuicon" onclick="showmobilemenu()">
-                    <div class="menuicon-line1"></div>
-                    <div class="menuicon-line2"></div>
-                    <div class="menuicon-line3"></div>
-                </div>   
-                <img src="../assets/image/LOGO.png" alt="">
-                <!-- active class add to menuitem that user clicked , and it remove from other items  -->
-                <div id="menu" class="menu">
-                    <div><a class="menuitem active" href="#">دسته بندی</a></div>
-                    <div> <a class="menuitem " href="#">همکاری با ما</a></div>
-                    <div><a class="menuitem " href="#">مشاوره</a></div>
-                </div>
-            </div>
-            <!-- search-bar -->
-            <div class="search-bar">              
-                    <span class="icon-loupe"></span>
-                    <input class="input search-input" type="text" placeholder="جستجو...">                
-            </div>
-            <!-- icon-bar -->
-            <div class="header-iconbar">
-                <div class="icon searchicon"><span class="icon-magnifying-glass"></span></div>
-                <div class="icon"><span class="icon-man-user"></span></div>
-                <div class="icon"><span class="icon-shopping-basket"></span></div>
-           </div>
+ 
+  <!-- header -->
+  <header>
+    <div class="first-header">
+      <!-- menuicon display in mobile view , when user click it showmobilemenu class (add to /remove from) mobilemenu-container  -->
+      <div class="menuicon" onclick="showmegasidebar()">
+        <div class="menuicon-line1"></div>
+        <div class="menuicon-line2"></div>
+        <div class="menuicon-line3"></div>
+      </div>
+      <!-- header-right : menuicon , logo , -->
+      <div class="header-right">
+
+        <img src="../assets/image/LOGO.png" alt="" />
+        <!-- search-bar -->
+        <div class="search-bar">
+          <span class="icon-loupe"></span>
+          <input class="input search-input" type="text" placeholder="جستجو..." />
         </div>
-    </header>
-    <!-- mobilemenu -->
-    <!-- mobilemenu display in mobile view when user click on menuicon then showmobilemenu class (add to /remove from) mobilemenu-container 
-    (mobilemenu-container display change into flex or none ) -->
-    <div class="mobilemenu-container">   
-        <!-- activemobilemenuitem class add to mobilemenu-item that user clicked , and it remove from other items  -->
-        <div id="mobilemenu" class="mobilemenu">
-                <div><a class="mobilemenu-item activemobilemenuitem " href="#">دسته بندی</a></div>
-                <div><a class="mobilemenu-item " href="#">همکاری با ما</a></div>
-                <div><a class="mobilemenu-item " href="#">مشاوره</a></div>
+      </div>
+
+      <!-- icon-bar -->
+      <div class="header-iconbar">
+        <div class="icon"><span class="icon-man-user"></span></div>
+        <div class="icon"><span class="icon-shopping-basket"></span></div>
+      </div>
+    </div>
+    <!-- second  header -->
+    <div class="second-header">
+
+      <!-- second-search-bar -->
+      <div class="second-search-bar">
+        <span class="icon-loupe"></span>
+        <input class="input second-search-input" type="text" placeholder="جستجو..." />
+      </div>
+      <!-- mega menu -->
+      <div class="mega-menu">
+        <div class="item">
+          <p>دوربین مداربسته <span></span></p>
+          <div class="hidden">
+            <div class="row dropdown-content">
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+               <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </div> 
+        <div class="item">
+          <p> تجهیزات شبکه <span></span></p>
+          <div class="hidden">
+            <div class="row dropdown-content">
+              
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+               <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <p>دزدگیر اماکن <span></span></p>
+          <div class="hidden">
+            <div class="row dropdown-content">
+           
+            
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+               <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <p>سانترال و تلفن <span></span></p>
+          <div class="hidden">
+            <div class="row dropdown-content">
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+               <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <p>اعلام حریق <span></span></p>
+          <div class="hidden">
+            <div class="row dropdown-content">
+             
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+               <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <p> باطری و UPS <span></span></p>
+          <div class="hidden">
+            <div class="row dropdown-content">
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+               <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <p>دانلودها<span></span></p>
+          <div class="hidden">
+            <div class="row dropdown-content">
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+               <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <p> آموزش <span></span></p>
+          <div class="hidden">
+            <div class="row dropdown-content">
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+               <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <p>پنل همکاران <span></span></p>
+          <div class="hidden">
+            <div class="row dropdown-content">
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+          
+              <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+               <div class="col dropdown-col">
+                <ul >
+                  <li class="bold-title"><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                  <li><a href="">آیتم</a></li>
+                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="contact-icon">
+        <span class="icon-icon-1 "></span>
+      </div>
+      
+  </header>
+ 
     <!-- content -->
     <div class="content-wrapper">
         <div class="main " >
