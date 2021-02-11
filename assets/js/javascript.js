@@ -6,79 +6,70 @@ const $side=$('.mobile-sidebar');
 //  mobilesidebar 
 
   
-$('.profile-icon').on('click', () => {
+$('.profile-icon').on('click', function(e){
   $side.toggleClass('showmobileslider');
      $bside.toggleClass('showmobileslider');
-   $('body').toggleClass('overflow-y-h');
+     e.preventDefault();
+     $('html, body').css('overflow','hidden'); 
 });
-$bside.mouseup(function() {
+$bside.mouseup(function(e){
   $side.removeClass('showmobileslider');
   $bside.removeClass('showmobileslider');
-  $('body').removeClass('overflow-y-h');
+  e.preventDefault();
+  $('html, body').css('overflow','auto'); 
  });
 
-$('.profile-close-icon').on('click', () => {
+$('.profile-close-icon').on('click', function(e){
   $side.removeClass('showmobileslider');
   $bside.removeClass('showmobileslider');
-  $('body').removeClass('overflow-y-h');
+  e.preventDefault();
+  $('html, body').css('overflow','auto'); 
 });
 
 //  megasidebar 
 
-function showmegasidebar() {
+$('.menuicon').on('click', function(e){
   $mside.toggleClass('showmegaslider');
   $bside.toggleClass('showmegaslider');
-  $('body').toggleClass('overflow-h');
-}
+  e.preventDefault();
+  $('html, body').css('overflow','hidden'); 
 
-
-$('.profile-close-icon').on('click', () => {
-  $mside.removeClass('showmegaslider');
-  $bside.removeClass('showmegaslider');
-  $('body').removeClass('overflow-h');
 });
 
 
-$bside.mouseup(function() {
+$('.profile-close-icon').on('click',  function(e){
   $mside.removeClass('showmegaslider');
   $bside.removeClass('showmegaslider');
-  $('body').removeClass('overflow-h');
+  e.preventDefault();
+  $('html, body').css('overflow','auto'); 
+});
+
+
+$bside.mouseup( function(e){
+  $mside.removeClass('showmegaslider');
+  $bside.removeClass('showmegaslider');
+  e.preventDefault();
+  $('html, body').css('overflow','auto'); 
  });
 
- $("#b1").click(function(){
-  $("#s1").slideToggle();
-});
-$("#b2").click(function(){
-  $("#s2").slideToggle();
-});
-$("#b3").click(function(){
-  $("#s3").slideToggle();
-});
-$("#b4").click(function(){
-  $("#s4").slideToggle();
-});
-$("#b5").click(function(){
-  $("#s5").slideToggle();
-});
 
  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-// var dropdownbtn = document.getElementsByClassName("dropdownbtn");
 
-// for ( let i = 0; i < dropdownbtn.length; i++) {
-//   dropdownbtn[i].addEventListener("click", function() {
-//   this.classList.toggle("active");
-//   var dropdownContent = this.nextElementSibling;
-//   if (dropdownContent.style.display === "block") {
-//   dropdownContent.style.display = "none";
-//   } else {
-//   dropdownContent.style.display = "block";
-//   }
-//   });
-// }
-$(".dropdownbtn").click(function(){
-  var dropdownContent = this.nextElementSibling;
-  dropdownContent.slideToggle("slow");
-});
+
+
+  $('.dropdownbtn').click( function() {
+    if(!$(this).parent().parents().hasClass('active')){
+      $('.item').removeClass('active');    
+      $('.dropdownbtn').removeClass('rotated');
+  }
+  $(this).parent().parent().toggleClass('active');
+  $(this).toggleClass('rotated');
+    
+  });
+ 
+
+
+
 //  add addres btn 
 
   $("#addaddress-btn").click(function(){
