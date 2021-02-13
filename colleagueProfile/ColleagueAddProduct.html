@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروفایل همکار</title>
+    <link rel="stylesheet" href="../assets/icon/style.css">  
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/font/font.css">
+    <script src="../assets/js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/hamkarstyle.css">
+
+</head>
+<body>
+    <!-- header -->
+    <header class=" container-fluid">
+        <div class=" header-container"> 
+             <!-- header-right : menuicon , logo , menu -->
+            <div class="header-right">
+                <!-- menuicon display in mobile view , when user click it showmobilemenu class (add to /remove from) mobilemenu-container  -->
+                <div class="menuicon" onclick="showmobilemenu()">
+                    <div class="menuicon-line1"></div>
+                    <div class="menuicon-line2"></div>
+                    <div class="menuicon-line3"></div>
+                </div>   
+                <img src="../assets/image/LOGO.png" alt="">
+                <!-- active class add to menuitem that user clicked , and it remove from other items  -->
+                <div id="menu" class="menu">
+                    <div><a class="menuitem active" href="#">دسته بندی</a></div>
+                    <div> <a class="menuitem " href="#">همکاری با ما</a></div>
+                    <div><a class="menuitem " href="#">مشاوره</a></div>
+                </div>
+            </div>
+            <!-- search-bar -->
+            <div class="search-bar">              
+                    <span class="icon-loupe"></span>
+                    <input class="input search-input" type="text" placeholder="جستجو...">                
+            </div>
+            <!-- icon-bar -->
+            <div class="header-iconbar">
+                <div class="icon searchicon"><span class="icon-magnifying-glass"></span></div>
+                <div class="icon"><span class="icon-man-user"></span></div>
+                <div class="icon"><span class="icon-shopping-basket"></span></div>
+           </div>
+        </div>
+    </header>
+    <!-- mobilemenu -->
+    <!-- mobilemenu display in mobile view when user click on menuicon then showmobilemenu class (add to /remove from) mobilemenu-container 
+    (mobilemenu-container display change into flex or none ) -->
+    <div class="mobilemenu-container">   
+        <!-- activemobilemenuitem class add to mobilemenu-item that user clicked , and it remove from other items  -->
+        <div id="mobilemenu" class="mobilemenu">
+                <div><a class="mobilemenu-item activemobilemenuitem " href="#">دسته بندی</a></div>
+                <div><a class="mobilemenu-item " href="#">همکاری با ما</a></div>
+                <div><a class="mobilemenu-item " href="#">مشاوره</a></div>
+        </div>
+    </div> 
+    <!-- content -->
+    <div class="content-wrapper">
+        <div class="main " >
+          
+               <div class="colleagueinfo-page">
+                    <div id="slider" class="sidebar ">
+                        <div class=" contentbox-sidebar">
+                            <p class="orangemessage-panel">کاربر همکار</p>
+                            <div class="user-image">
+                                <img src="../assets/image/Group 188.png" alt="">
+                            </div>
+                            <p class="blackmessage">عرفان سبحانی</p>
+                            <p class="blackmessage">۰۹000000000 </p>
+                        </div>  
+                        
+                        <div class="item  on"><a href="#"><span class="icon-icons-02"></span><p>اطلاعات کاربری</p></a></div> 
+                        <div class="item on active-item"><a href="#"><span class="icon-icons-03"></span><p>اطلاعات حقوقی</p></a></div> 
+                        <div class="item disabled-item" ><a href="#"><span class="icon-icons-04"></span><p>فروشگاه من</p></a></div> 
+                        <div class="item on"><a href="#"><span class="icon-icons-05"></span><p>سفارش ها</p></a></div>                    
+                        <div class="item on"><a href="#"><span class="icon-icons-06"></span><p>علاقه‌مندی‌ها</p></a></div>   
+                        <div class="item on"><a href="#"><span class="icon-icons-07"></span><p>نشانی‌ها</p></a></div> 
+                        <div class="item on"><a href="#"><span class="icon-icons-08"></span><p>پیغام‌ها</p></a></div> 
+                        <div class="item on"><a href="#"><span class="icon-icons-01"></span><p>خروج</p></a></div>   
+                    </div>
+                    <div class=" contentbox-colleagueinfo sidebaron " >
+                        <div class="contentbox mb-20 P-0">
+                            <div class="header-myshop " >
+                                <div id="title-container" class="title-container">
+                                
+                                        <div class="title title-active  ">
+                                                <div>
+                                                    <p>گزارش فروش</p>
+                                                
+                                                </div>
+                                        </div>
+                                        <div class="title">
+                                                <div>
+                                                    <p>افزودن کالا</p>
+                                                
+                                                </div>
+                                        </div>
+                                        <div class="title">
+                                                <div>
+                                                    <p>مدیریت کالا</p>
+                                                
+                                                </div>
+                                        </div>
+                                    </div>
+
+                            </div>
+                            <div class="my-shop">
+                                    <div class=" search-bar-1">
+                                        <span class="icon-loupe"></span>
+                                        <input class="input search-input" type="text" placeholder="جستجو...">  
+                                    </div>
+                                    
+                                    <div class="row userInfo">
+                                            <div class="col-md-6">
+                                                <div>
+                                                    
+                                                    <select class="transparent-select">
+                                                        
+                                                        <option value=""selected="selected">دسته بندی</option>
+                                                        <option value="" >دسته1 </option>
+                                                        <option value="" >دسته2 </option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    
+                                                    <select class="transparent-select">
+                                                        
+                                                        <option value=""selected="selected"> نوع کالا</option>
+                                                        <option value="" >نوع 1 </option>
+                                                        <option value="" >نوع 2 </option>
+                                                    </select>
+                                                </div>
+                                            
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div>
+                                                    
+                                                    <select class="transparent-select" >
+                                                        <option value="" selected="selected">مدل کالا</option>
+                                                        <option value="">مدل 1</option>
+                                                        <option value="" >مدل 2</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    
+                                                    <select class="transparent-select" >
+                                                        <option value="" selected="selected">برند</option>
+                                                        <option value="">برند 1</option>
+                                                        <option value="" >برند 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    </div> 
+                                    <div class="center-page responsive">
+                                        <button  class="orangebtn2 m-0 responsive">جستجو</button>
+                                    </div>
+                                    
+                                    <div class="search-result">
+                                        <div class="">
+                                            <p>دوربین مدار بسته آنالوگ هایک ویژن مدل</p><p>مشاهده جزئیات</p>
+                                        </div>
+                                        <div class="">
+                                            <p>دوربین مدار بسته آنالوگ هایک ویژن مدل</p><p>مشاهده جزئیات</p>
+                                        </div>
+                                        <div class="">
+                                            <p>دوربین مدار بسته آنالوگ هایک ویژن مدل</p><p>مشاهده جزئیات</p>
+                                        </div>
+                                        <div class="">
+                                            <p>دوربین مدار بسته آنالوگ هایک ویژن مدل</p><p>مشاهده جزئیات</p>
+                                        </div>
+                                        <div class="">
+                                            <p>دوربین مدار بسته آنالوگ هایک ویژن مدل</p><p>مشاهده جزئیات</p>
+                                        </div>
+                                        <div class="">
+                                            <p>دوربین مدار بسته آنالوگ هایک ویژن مدل</p><p>مشاهده جزئیات</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="add-product">
+                                            <p> نام محصول : <span>  محصول اول</span></p>
+                                            <p> دسته بندی مادر : <span>دسته بندی مادر اول </span></p>
+                                        
+                                            <div class="attr">
+                                                <p>ویژگی ها : </p>
+                                                <div>
+                                                    <select class="select" >
+                                                        <option value="" selected="selected">ویژگی ها </option>
+                                                        <option value="">ویژگی 1</option>
+                                                        <option value="" >ویژگی 2</option>
+                                                    </select>
+                                                    <select class="select" >
+                                                        <option value="" selected="selected">ویژگی ها </option>
+                                                        <option value="">ویژگی 1</option>
+                                                        <option value="" >ویژگی 2</option>
+                                                    </select>
+                                                    <select class="select" >
+                                                        <option value="" selected="selected">ویژگی ها </option>
+                                                        <option value="">ویژگی 1</option>
+                                                        <option value="" >ویژگی 2</option>
+                                                    </select>
+                                                    <select class="select" >
+                                                        <option value="" selected="selected">ویژگی ها </option>
+                                                        <option value="">ویژگی 1</option>
+                                                        <option value="" >ویژگی 2</option>
+                                                    </select>
+                                                    <select class="select" >
+                                                        <option value="" selected="selected">ویژگی ها </option>
+                                                        <option value="">ویژگی 1</option>
+                                                        <option value="" >ویژگی 2</option>
+                                                    </select>
+                                                </div>
+
+
+                                            </div>
+                                            
+                                            <div class="row pb-10 "> 
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <div class="cost">
+                                                        <p>قیمت فروش : </p>
+                                                        <div class="blue-border"><input type="text"></div>
+                                                        <p>تومان </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                                    <div class="number">
+                                                        <p>تعداد : </p>
+                                                        <div class="blue-border"><span>-</span><input type="text"><span>+</span></div>
+                                                    
+                                                    </div>
+                                                </div>
+                                            
+                                                
+
+                                            </div>
+                                                
+
+                                        </div>
+                                        <div class="center-page responsive">
+                                            <button  class="orangebtn2 m-0 responsive">افزودن کالا</button>
+                                        </div>
+                                    </div>
+
+                                    
+                            </div>
+                        </div>
+                        <div class="contentbox my-shop">
+                            <div>
+                                <div class="add-product">
+                                    <p> نام محصول : <span>  محصول اول</span></p>
+                                    <p> دسته بندی مادر : <span>دسته بندی مادر اول </span></p>
+                                
+                                    <div class="attr">
+                                        <p>ویژگی ها : </p>
+                                        <div>
+                                            <select class="select" >
+                                                <option value="" selected="selected">ویژگی ها </option>
+                                                <option value="">ویژگی 1</option>
+                                                <option value="" >ویژگی 2</option>
+                                            </select>
+                                            <select class="select" >
+                                                <option value="" selected="selected">ویژگی ها </option>
+                                                <option value="">ویژگی 1</option>
+                                                <option value="" >ویژگی 2</option>
+                                            </select>
+                                            <select class="select" >
+                                                <option value="" selected="selected">ویژگی ها </option>
+                                                <option value="">ویژگی 1</option>
+                                                <option value="" >ویژگی 2</option>
+                                            </select>
+                                            <select class="select" >
+                                                <option value="" selected="selected">ویژگی ها </option>
+                                                <option value="">ویژگی 1</option>
+                                                <option value="" >ویژگی 2</option>
+                                            </select>
+                                            <select class="select" >
+                                                <option value="" selected="selected">ویژگی ها </option>
+                                                <option value="">ویژگی 1</option>
+                                                <option value="" >ویژگی 2</option>
+                                            </select>
+                                        </div>
+
+
+                                    </div>
+                                    
+                                    <div class="row pb-10 "> 
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <div class="cost">
+                                                <p>قیمت فروش : </p>
+                                                <div class="blue-border"><input type="text"></div>
+                                                <p>تومان </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-sm-12">
+                                            <div class="number">
+                                                <p>تعداد : </p>
+                                                <div class="blue-border"><span>-</span><input type="text"><span>+</span></div>
+                                            
+                                            </div>
+                                        </div>
+                                    
+                                        
+
+                                    </div>
+                                        
+
+                                </div>
+                                
+                            </div>
+                        </div>    
+                    </div>
+               </div> 
+                
+        </div>
+    </div> 
+     <!-- footer -->
+     <footer class="container-fluid ">
+        <div class="footer-container">
+             <div class="row">
+                 <div class="col-sm-4 ">
+                    <div class="f-sec"> 
+                            <div class="f-sec-item">
+                                    <span class="icon-request icon"></span><a href="#">درباره ما</a>
+                            </div>
+                            <div class="f-sec-item">
+                                    <span class="icon-headset icon"></span><a href="#">تماس با ما</a>
+                            </div>
+                            <div class="f-sec-item">
+                                    <span class="icon-shopping-basket-1 icon"></span><a href="#">راهنمای خرید</a>                                    </div>
+                            <div class="f-sec-item">
+                                    <span class="icon-diagram icon"></span><a href="#">نقشه سایت</a>
+                            </div>
+                    </div>
+                </div>
+                 
+                <div class="col-sm-4">
+                    <div class="f-sec">
+                        <div class="center"><p>از تخفیفات و جدیدترین های ما با خبر شوید</p></div>
+                        <div class="footer-emailbar-iconbar" ><input class="input email-input " type="email" placeholder="ایمیل خود را وارد کنید"><input type="button" class="email-btn" value="ارسال"></div>
+                        <div class="footer-emailbar-iconbar">
+                            
+                                <span class="icon-twitter icon"></span>
+                            
+                                <span class="icon-whatsapp icon"></span>
+                           
+                                <span class="icon-instagram icon"></span>
+                            
+                        </div>    
+                        
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class=" center">
+                        <img src="../assets/image/namad.png" alt="">
+                    </div>
+
+                </div>
+             </div>
+         </div>
+</footer>
+<!-- import javascript -->
+<script>
+  
+</script>
+<script type='text/javascript' src="../assets/js/javascript.js"></script>
+</body>
+</html>

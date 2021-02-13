@@ -1,10 +1,7 @@
- .rotated {
-    -webkit-transform: rotate(180deg);  /* Chrome, Safari 3.1+ */
-    -moz-transform: rotate(180deg);  /* Firefox 3.5-15 */
-    -ms-transform: rotate(180deg);  /* IE 9 */
-    -o-transform: rotate(180deg);  /* Opera 10.50-12.00 */
-    transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
-}
+
+
+
+
 
 
 *{
@@ -864,6 +861,7 @@ width: calc(100% - 262px);
 /* margin-right:274px; */
 
 position: relative;
+height: fit-content;
 
 
 }
@@ -1820,7 +1818,7 @@ justify-content: space-between;
         font-size: 11px;
         
      }
-
+   
  @media only screen and (max-width:768px) {
 
     /* general responsiving */
