@@ -5,6 +5,18 @@
     -o-transform: rotate(180deg);  /* Opera 10.50-12.00 */
     transform: rotate(180deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
 }
+p{
+    margin-bottom: 0!important;
+}
+/* خط 501 پاک شه  */
+.profile-close-icon{
+
+    margin-left: 6px;
+    color: gray;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+}
 .P-0{
     padding: 0px!important;
 }
@@ -22,9 +34,9 @@
 .title-container{
     display: flex;
     height: 100%;
-    
-    
+
 }
+
 .my-shop{
     padding: 45px 50px;
 }
@@ -122,27 +134,14 @@
       font-size: 13px;
       
   }
-  .add-product>p{
-   color: gray;
-   padding: 5px 0 6px 0;
-    
-}
-.add-product>p>span{
-    color: black;
-    
-     
- }
+
   .add-product .attr{
       display: flex;
       padding-top: 4px;
       padding-bottom: 4px;
 
   }
-  .add-product .attr>p{
-    color: gray;
- 
-
-  }
+  
   .add-product .attr>div{
       display: flex;
       flex-flow: wrap;
@@ -173,13 +172,8 @@ input:focus {
     min-width: 100px;
   
 }
-.cost>p{
-   color: gray;
-}
-.cost>p:nth-child(2){
-    color: gray;
-    margin-right: 5px;
- }
+
+
 
 .cost>.blue-border{
     margin-right: 5px;
@@ -205,9 +199,7 @@ input:focus {
     align-items: baseline;
     
 }
-.number>p{
-   color: gray;
-}
+
 
 .number>.blue-border{
     
@@ -237,7 +229,13 @@ input:focus {
      flex-direction: column;
  }
 
-
+.dis-none{
+    display: none;
+}
+.header-table{
+    display: flex;
+    
+}
   
  
  
@@ -250,7 +248,7 @@ input:focus {
     flex: 1;
    }
    .my-shop{
-    padding: 20px 30px;
+    padding: 10px 10px;
 }
 .center-page.responsive{
     display: flex;
@@ -272,4 +270,10 @@ input:focus {
   .search-result div p:nth-child(2) { 
  display: none;
   } 
+  .nav-link{
+    padding: 5px!important;
+}
+.order-table{
+    font-size: 8px;
+}
 }

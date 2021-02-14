@@ -477,6 +477,8 @@ header{
     margin-left: 6px;
     color: gray;
     cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .mega-sidebar{
@@ -496,10 +498,7 @@ header{
     
    
 }
-.mega-sidebar .profile-close-icon{
-    display: initial;
-    width: fit-content;
-}
+
 /* Style the mega-sidebar links and the dropdown button */
 
   .icon-angle-down{
