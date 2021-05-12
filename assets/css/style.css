@@ -345,17 +345,13 @@ header{
     background: #e1e3e4;
       height: 0;
     overflow: hidden;
- 
-    animation: shrink 0.5s ease-in-out both;
-    
+    animation: shrink 0.5s ease-in-out both;  
 }
 
 .mega-side .item.active  .hidden{
     animation: grow 1s ease-in-out both;
-  
   }
   @keyframes grow {
-   
     0% {
 
       opacity: 0;
@@ -375,13 +371,9 @@ header{
         max-height:90rem;
       }
     100% {
-       
-     
-      opacity: 0;
+        opacity: 0;
       max-height:0;
     }
-  
-   
   }
 .mega-side .item:hover .hidden {
     cursor: pointer;
