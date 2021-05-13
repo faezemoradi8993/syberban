@@ -1,152 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>edit - info</title>
-    <link rel="stylesheet" href="../assets/icon/style.css">  
-  
+    <title>legalInfo</title>
+    <link rel="stylesheet" href="../assets/icon/style.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/font/font.css">
     <script src="../assets/js/jquery-3.5.1.js"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/style2.css">     
+    <link rel="stylesheet" href="../assets/css/style2.css">
 </head>
+
 <body>
-    <!-- header -->
-    <header class=" container-fluid">
-        <div class=" header-container"> 
-             <!-- header-right : menuicon , logo , menu -->
-            <div class="header-right">
-                <!-- menuicon display in mobile view , when user click it showmobilemenu class (add to /remove from) mobilemenu-container  -->
-                <div class="menuicon" onclick="showmobilemenu()">
-                    <div class="menuicon-line1"></div>
-                    <div class="menuicon-line2"></div>
-                    <div class="menuicon-line3"></div>
-                </div>   
-                <img src="../assets/image/LOGO.png" alt="">
-                <!-- active class add to menuitem that user clicked , and it remove from other items  -->
-                <div id="menu" class="menu">
-                    <div><a class="menuitem active" href="#">دسته بندی</a></div>
-                    <div> <a class="menuitem " href="#">همکاری با ما</a></div>
-                    <div><a class="menuitem " href="#">مشاوره</a></div>
-                </div>
-            </div>
-            <!-- search-bar -->
-            <div class="search-bar">              
-                    <span class="icon-loupe"></span>
-                    <input class="input search-input" type="text" placeholder="جستجو...">                
-            </div>
-            <!-- icon-bar -->
-            <div class="header-iconbar">
-                <div class="icon searchicon"><span class="icon-magnifying-glass"></span></div>
-                <div class="icon"><span class="icon-man-user"></span></div>
-                <div class="icon"><span class="icon-shopping-basket"></span></div>
-           </div>
-        </div>
-    </header>
-    <!-- mobilemenu -->
-    <!-- mobilemenu display in mobile view when user click on menuicon then showmobilemenu class (add to /remove from) mobilemenu-container 
-    (mobilemenu-container display change into flex or none ) -->
-    <div class="mobilemenu-container">   
-        <!-- activemobilemenuitem class add to mobilemenu-item that user clicked , and it remove from other items  -->
-        <div id="mobilemenu" class="mobilemenu">
-                <div><a class="mobilemenu-item activemobilemenuitem " href="#">دسته بندی</a></div>
-                <div><a class="mobilemenu-item " href="#">همکاری با ما</a></div>
-                <div><a class="mobilemenu-item " href="#">مشاوره</a></div>
-        </div>
-    </div> 
+
     <!-- content -->
     <div class="content-wrapper">
-        <div class="main " >
-               <div class="colleagueinfo-page">
-                    <div id="slider" class="sidebar ">
-                        <div class=" contentbox-sidebar">
-                            <p class="orangemessage-panel">کاربر همکار</p>
-                            <div class="user-image">
-                                <img src="../assets/image/Group 188.png" alt="">
-                            </div>
-                            <p class="blackmessage">عرفان سبحانی</p>
-                            <p class="blackmessage">۰۹000000000 </p>
-                        </div>  
-                        
-                        <div class="item  on"><a href="#"><span class="icon-icons-02"></span><p>اطلاعات کاربری</p></a></div> 
-                        <div class="item on active-item"><a href="#"><span class="icon-icons-03"></span><p>اطلاعات حقوقی</p></a></div> 
-                        <div class="item disabled-item" ><a href="#"><span class="icon-icons-04"></span><p>فروشگاه من</p></a></div> 
-                        <div class="item on"><a href="#"><span class="icon-icons-05"></span><p>سفارش ها</p></a></div>                    
-                        <div class="item on"><a href="#"><span class="icon-icons-06"></span><p>علاقه‌مندی‌ها</p></a></div>   
-                        <div class="item on"><a href="#"><span class="icon-icons-07"></span><p>نشانی‌ها</p></a></div> 
-                        <div class="item on"><a href="#"><span class="icon-icons-08"></span><p>پیغام‌ها</p></a></div> 
-                        <div class="item on"><a href="#"><span class="icon-icons-01"></span><p>خروج</p></a></div>   
+        <div class="main ">
+            <div class="colleagueinfo-page">
+                <div id="slider" class="sidebar ">
+                    <div class=" contentbox-sidebar">
+                        <p class="orangemessage-panel">کاربر همکار</p>
+                        <div class="user-image">
+                            <img src="../assets/image/Group 188.png" alt="">
+                        </div>
+                        <p class="blackmessage">عرفان سبحانی</p>
+                        <p class="blackmessage">۰۹000000000 </p>
                     </div>
-                    <div class="contentbox contentbox-colleagueinfo ">
-                        <div class="pt-50 " >
-                            <p class="graymessage1">:نام شرکت/سازمان</p>
-                            <p class="blackmessage">نوین مارکتینگ</p>
-                            <div class="grayline"></div>
-                            <p class="graymessage1"> شماره تلفن ثابت</p>
-                            <p class="blackmessage">۰21-66666666</p>
-                            <div class="grayline"></div> 
-                            <p class="graymessage1">صنف</p>
-                            <p class="blackmessage">پخش و فروش سیستم‌های امنیتی</p>
-                            <div class="grayline"></div> 
-                            <p class="graymessage1">کد اقتصادی</p>
-                            <p class="blackmessage">66666666</p>
-                            <div class="grayline"></div> 
-                            <p class="graymessage1">شناسه ملی</p>
-                            <p class="blackmessage">66666666</p>
-                            <div class="grayline"></div> 
-                            <p class="graymessage1">شناسه ثبت</p>
-                            <p class="blackmessage">66666666</p>
-                            <div class="grayline"></div> 
-                            <p class="graymessage1">شماره جواز کسب</p>
-                            <p class="blackmessage">66666666</p>
-                            <div class="grayline"></div> 
-                            <div class="flex-between"> 
-                                <p class="graymessage1">وضعیت تایید جواز کسب</p>
-                                <p class="orangemessage mb-0"> مشاهده جواز کسب</p>
-                            </div>
-                            <p class="blackmessage">در حال بررسی</p>
-                            <button  class="orangebtn2" onclick="function1()">ویرایش اطلاعات </button>
-                            </div>
-                    </div> 
+
+                    <div class="item  on"><a href="#"><span class="icon-icons-02"></span>
+                            <p>اطلاعات کاربری</p>
+                        </a></div>
+                    <div class="item on active-item"><a href="#"><span class="icon-icons-03"></span>
+                            <p>اطلاعات حقوقی</p>
+                        </a></div>
+                    <div class="item disabled-item"><a href="#"><span class="icon-icons-04"></span>
+                            <p>فروشگاه من</p>
+                        </a></div>
+                    <div class="item on"><a href="#"><span class="icon-icons-05"></span>
+                            <p>سفارش ها</p>
+                        </a></div>
+                    <div class="item on"><a href="#"><span class="icon-icons-06"></span>
+                            <p>علاقه‌مندی‌ها</p>
+                        </a></div>
+                    <div class="item on"><a href="#"><span class="icon-icons-07"></span>
+                            <p>نشانی‌ها</p>
+                        </a></div>
+                    <div class="item on"><a href="#"><span class="icon-icons-08"></span>
+                            <p>پیغام‌ها</p>
+                        </a></div>
+                    <div class="item on"><a href="#"><span class="icon-icons-01"></span>
+                            <p>خروج</p>
+                        </a></div>
+                </div>
+                <div class="contentbox contentbox-colleagueinfo sidebaron">
+                    <div class="profile-icon">
+                        <span class="icon-plus_plus-copy-3 "></span>
+                    </div>
+                    <div class="pt-50 ">
+                        <p class="graymessage1">:نام شرکت/سازمان</p>
+                        <p class="blackmessage">نوین مارکتینگ</p>
+                        <div class="grayline"></div>
+                        <p class="graymessage1"> شماره تلفن ثابت</p>
+                        <p class="blackmessage">۰21-66666666</p>
+                        <div class="grayline"></div>
+                        <p class="graymessage1">صنف</p>
+                        <p class="blackmessage">پخش و فروش سیستم‌های امنیتی</p>
+                        <div class="grayline"></div>
+                        <p class="graymessage1">کد اقتصادی</p>
+                        <p class="blackmessage">66666666</p>
+                        <div class="grayline"></div>
+                        <p class="graymessage1">شناسه ملی</p>
+                        <p class="blackmessage">66666666</p>
+                        <div class="grayline"></div>
+                        <p class="graymessage1">شناسه ثبت</p>
+                        <p class="blackmessage">66666666</p>
+                        <div class="grayline"></div>
+                        <p class="graymessage1">شماره جواز کسب</p>
+                        <p class="blackmessage">66666666</p>
+                        <div class="grayline"></div>
+                        <div class="flex-between">
+                            <p class="graymessage1">وضعیت تایید جواز کسب</p>
+                            <p class="orangemessage mb-0"> مشاهده جواز کسب</p>
+                        </div>
+                        <p class="blackmessage">در حال بررسی</p>
+                        <button class="orangebtn2" onclick="function1()">ویرایش اطلاعات </button>
+                    </div>
                 </div>
             </div>
-    </div> 
-     <!-- footer -->
-     <footer class="container-fluid ">
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="container-fluid ">
         <div class="footer-container">
-             <div class="row">
-                 <div class="col-sm-4 ">
-                    <div class="f-sec"> 
-                            <div class="f-sec-item">
-                                    <span class="icon-request icon"></span><a href="#">درباره ما</a>
-                            </div>
-                            <div class="f-sec-item">
-                                    <span class="icon-headset icon"></span><a href="#">تماس با ما</a>
-                            </div>
-                            <div class="f-sec-item">
-                                    <span class="icon-shopping-basket-1 icon"></span><a href="#">راهنمای خرید</a>                                    </div>
-                            <div class="f-sec-item">
-                                    <span class="icon-diagram icon"></span><a href="#">نقشه سایت</a>
-                            </div>
+            <div class="row">
+                <div class="col-sm-4 ">
+                    <div class="f-sec">
+                        <div class="f-sec-item">
+                            <span class="icon-request icon"></span><a href="#">درباره ما</a>
+                        </div>
+                        <div class="f-sec-item">
+                            <span class="icon-headset icon"></span><a href="#">تماس با ما</a>
+                        </div>
+                        <div class="f-sec-item">
+                            <span class="icon-shopping-basket-1 icon"></span><a href="#">راهنمای خرید</a>
+                        </div>
+                        <div class="f-sec-item">
+                            <span class="icon-diagram icon"></span><a href="#">نقشه سایت</a>
+                        </div>
                     </div>
                 </div>
-                 
+
                 <div class="col-sm-4">
                     <div class="f-sec">
-                        <div class="center"><p>از تخفیفات و جدیدترین های ما با خبر شوید</p></div>
-                        <div class="footer-emailbar-iconbar" ><input class="input email-input " type="email" placeholder="ایمیل خود را وارد کنید"><input type="button" class="email-btn" value="ارسال"></div>
+                        <div class="center">
+                            <p>از تخفیفات و جدیدترین های ما با خبر شوید</p>
+                        </div>
+                        <div class="footer-emailbar-iconbar"><input class="input email-input " type="email"
+                                placeholder="ایمیل خود را وارد کنید"><input type="button" class="email-btn"
+                                value="ارسال"></div>
                         <div class="footer-emailbar-iconbar">
-                            
-                                <span class="icon-twitter icon"></span>
-                            
-                                <span class="icon-whatsapp icon"></span>
-                           
-                                <span class="icon-instagram icon"></span>
-                            
-                        </div>    
-                        
+
+                            <span class="icon-twitter icon"></span>
+
+                            <span class="icon-whatsapp icon"></span>
+
+                            <span class="icon-instagram icon"></span>
+
+                        </div>
+
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -155,13 +139,14 @@
                     </div>
 
                 </div>
-             </div>
-         </div>
-</footer>
-<!-- import javascript -->
-<script>
-  
-</script>
-<script type='text/javascript' src="../assets/js/javascript.js"></script>
+            </div>
+        </div>
+    </footer>
+    <!-- import javascript -->
+    <script>
+
+    </script>
+    <script type='text/javascript' src="../assets/js/javascript.js"></script>
 </body>
+
 </html>
